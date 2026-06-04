@@ -12,18 +12,36 @@ The program defines a class `Demo` with:
 ## 🧠 Algorithm
 
 1. Define a class named `Demo`.
-2. Inside the class, define the `__init__` method:
-   - Initialize an instance variable `status` with the value `"Alive"`.
-   - Print the value of `status`.
-3. Define the `__del__` method:
-   - Print a message indicating the object is being destroyed.
-4. Outside the class:
-   - Create an instance of the `Demo` class.
-   - Delete the object using the `del` keyword.
+2. Inside the class, define the `__init__` method.
+3. Initialize an instance variable `status` with the value `"Alive"`.
+4. Print the value of `status`.
+5. Define the `__del__` method.
+6. Print a message indicating that the object is being destroyed.
+7. Create an object of the `Demo` class.
+8. Delete the object using the `del` keyword.
+
 ## Program
-Add code Here
+
+```python
+class Demo:
+    def __init__(self):
+        self.status = "Alive"
+        print(self.status)
+
+    def __del__(self):
+        print("Object destroyed")
+
+obj = Demo()
+del obj
+```
 
 ## 🧪 Output
 
+```text
+Alive
+Object destroyed
+```
+
 ## Result
 
+Thus, the Python program to demonstrate a destructor was executed successfully.
